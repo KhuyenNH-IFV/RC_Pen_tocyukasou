@@ -1,0 +1,48 @@
+/*======================================
+        Helper
+======================================*/
+.is_pc {
+    display: inherit;
+}
+.is_sp {
+    display: none;
+}
+.is_hidden {
+    display: none;
+}
+.bold {
+    font-weight: bold;
+}
+.tar {
+    text-align: right;
+}
+.tal {
+    text-align: left;
+}
+.tac {
+    text-align: center;
+}
+.float_left {
+    float: left;
+}
+.float_right {
+    float: right!important;
+}
+.brd_none {
+    border: 0!important;
+}
+.mL-50 {
+    margin-left: -5rem;
+}
+.red {
+    color: #6B0000;
+}
+.white {
+    color: #fff;
+}
+.bg-white {
+    background: #fff;
+}
+.w469 {
+    width: 46.9rem;
+}

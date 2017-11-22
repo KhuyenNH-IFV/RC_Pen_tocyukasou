@@ -1,0 +1,32 @@
+/*======================================
+        Footer
+======================================*/
+.footer {
+    @extend %clearfix;
+    text-align: center;
+    background: $color-o;
+    height: 93px;
+    line-height: 93px;
+    ul {
+        display: table;
+        margin: auto;
+        font-size: 25px;
+        li {
+            float: left;
+            color: $color-a;
+        }
+        a {
+            color: $color-a;
+            text-align: center;
+            
+        }
+    }
+}
+.support {
+    position: absolute;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    // right: 447px;
+}

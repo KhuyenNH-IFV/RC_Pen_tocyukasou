@@ -1,0 +1,186 @@
+/*------------------- Wraper -------------------*/
+body {
+    background: #42210B;
+}
+.row_clear {
+    @extend %clearfix;
+}
+#container {
+    position: relative;
+    background: #fff;
+    width: 960px;
+    margin: 0 auto;
+    @extend %clearfix;
+    // padding: 0 15px;
+}
+
+/*------------------- Component -------------------*/
+// /*------------------- Typography -------------------*/
+.title_h2 {
+    text-align: center;
+}
+.title_h3 {
+    text-align: center;
+    // font-size: 24px;
+    // line-height: 1.8;
+    // font-weight: bold;
+}
+.title_A {
+    // font-size: 24px;
+    // color: $color-primary;
+    // line-height: 1.8;
+    // font-weight: bold;
+}
+.title_B {
+    color: $color-1;
+    font-size: 2.6rem;
+    font-weight: bold;
+    line-height: 1.4;
+    // font-weight: bold;
+}
+.text {
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+}
+
+.noteAds, .note {
+    font-size: 1.2rem;
+}
+
+.main_img {
+    position: relative;
+    .img_bg {
+        margin-left: -4.5rem;
+    }
+    .imgThumb {
+        position: absolute;
+        right: 0;
+        bottom: 3.5rem;
+    }
+    .imgThumb2 {
+        position: absolute;
+        right: 2.3rem;
+        bottom: 0;
+    }
+    .listIconGold {
+        z-index: 9;
+        position: absolute;
+        right: 2rem;
+        top: 6rem;
+        li {
+            position: relative;
+            margin: 0 .6rem;
+            float: left;
+            width: 16.8rem;
+            height: 16.9rem;
+        }
+    }
+    .listGold {
+        position: absolute;
+        right: 3rem;
+        top: 3rem;
+        li {
+            position: relative;
+            margin: 0 .6rem;
+            float: left;
+            width: 16.8rem;
+            height: 16.9rem;
+            border-radius: 50%;
+            overflow: hidden;
+            background: url('../images/gold.png') no-repeat;
+            background-size: cover;
+            img {
+                position: absolute;
+                z-index: 9;
+            }
+        }
+        .shiny {
+            position: absolute;
+            left: 1rem;
+            top: -4rem;
+            z-index: 3;
+            display: block;
+            width: 4rem;
+            height: 25rem;
+            margin-top: .7rem;
+            transform: rotate(45deg);
+            background-image: linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+            background-image: gradient(linear, left bottom, right bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 0)));
+        }
+    }
+}
+.content_img {
+    position: relative;
+    .m_btn {
+        position: absolute;
+        top: 6rem;
+        right: 5.6rem;
+    }
+}
+.rectrbtn {
+    text-align: center;
+}
+.ctrbtn {
+    width: 80.9rem;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    .shiny {
+        position: absolute;
+        left: 1rem;
+        top: -8rem;
+        z-index: 10;
+        display: block;
+        width: 8rem;
+        height: 40rem;
+        margin-top: .7rem;
+        transform: rotate(45deg);
+        background-image: linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+        background-image: gradient(linear, left bottom, right bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 0)));
+    }
+}
+.ctrbtn2 {
+    position: absolute;
+    bottom: 18.7rem;
+    right: 7.1rem;
+}
+.arrow {
+    text-align: center;
+}
+
+/*------------------- List -------------------*/
+.listItems {
+    @extend %clearfix;
+    // .items {
+    //     float: left;
+    // }
+}
+.fadeLeft {
+    opacity: 0;
+    transform: translate(-100px, 0px);
+    transition: all 0.6s;
+    &.ef-slide {
+        opacity: 1;
+        transform: translate(0px, 0px);
+        @for $i from 1 through 3 {
+            &:nth-of-type(#{$i}){
+                transition-delay: 150ms * $i;
+            }
+        }
+    }
+}
+.fadeDown {
+    opacity: 0;
+    transform: translate(0px, -100px);
+    transition: all 0.6s;
+    &.ef-slide {
+        @for $i from 1 through 3 {
+            &:nth-of-type(#{$i}){
+                transition-delay: 150ms * $i;
+                opacity: 1;
+                transform: translate(0px, 0px);
+            }
+        }
+    }
+}

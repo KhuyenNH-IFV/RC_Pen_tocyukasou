@@ -1,0 +1,240 @@
+/*------------------------------------
+
+            Pen_tocyukasou
+
+------------------------------------*/
+
+/*  page-main
+------------------------------------*/
+.title_header {
+    text-align: center;
+}
+
+/*  local_02
+------------------------------------*/
+.local_02 {
+    background: $color-o;
+    @extend %clearfix;
+    .listThumbNews {
+        width: 90rem;
+        margin: auto;
+        margin-top: 5rem;
+    }
+    .title_z {
+        position: relative;
+        z-index: 99;
+    }
+    .listThumbNews {
+        .items_news {
+            position: relative;
+            background: url('../images/background_news.png') no-repeat;
+            background-size: cover;
+            padding: 11.3rem 4.4rem 4rem;
+            &:not(:last-child) {
+                margin-bottom: 10rem;
+            }
+            .title_h3 {
+                position: absolute;
+                top: -10rem;
+                left: 0;
+                right: 0;
+            }
+            &:nth-child(1) {
+                
+            }
+            &:nth-child(2) {
+                .text {
+                    width: 52.6rem;
+                }
+                .imgThumb {
+                    float: right;
+                }
+            }
+            &:nth-child(3) {
+                .text {
+                    width: 45.2rem;
+                }
+                .imgThumb {
+                    float: right;
+                    position: relative;
+                    top: -5.5rem;
+                }
+            }
+            &:nth-child(4) {
+                .text {
+                    width: 44rem;
+                }
+            }
+        }
+    }
+    .imgFade {
+        position: absolute;
+        top: -0.8rem;
+        right: 0;
+    }
+    .thumb_news_sub_3 {
+        position: relative;
+        .imgFade {
+            top: -12.8rem;
+            right: 6rem;
+        }
+    }
+    .thumb_news_sub_2 {
+        position: relative;
+    }
+    .imgThumb_left {
+        margin-left: -7.4rem;
+    }
+    .thumb_news_sub {
+        background: $color-a;
+        margin-top: 4.5rem;
+        position: relative;
+        padding: 1.6rem 3.5rem 1.6rem 18.6rem;
+        border: 1px solid $color-o;
+        .imgThumb_sub {
+            position: absolute;
+            top: -4.5rem;
+            left: 0;
+        }
+    }
+    .imgThumb {
+        float: left;
+    }
+    .text {
+        float: left;
+        padding-left: 1rem;
+        text-align: justify;
+    }
+}
+
+/*  local_03
+------------------------------------*/
+.local_03 {
+    padding-bottom: 6.5rem;
+    background: $color-o;
+    .frameVideo {
+        width: 89.9rem;
+        margin: auto;
+    }
+    .thumb_news {
+        background: $color-a;
+        margin: auto;
+        width: 80rem;
+        padding: 3rem 1.5rem 2rem 3rem;
+        .imgThumb {
+            float: left;
+        }
+        .title_h4 {
+            padding-bottom: 1rem;
+        }
+        .text {
+            padding-left: 2.4rem;
+            width: 54.8rem;
+            float: left;
+        }
+    }
+}
+
+/*  local_04 / info_mail
+------------------------------------*/
+.info_mail {
+    .img_content {
+        position: relative;
+    }
+    .mail_btn {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 3rem;
+        text-align: center;
+    }
+}
+/*  local_05
+------------------------------------*/
+.local_05 {
+    background: #FCFFD4;
+    .img_content {
+        position: relative;
+        top: -18rem;
+    }
+    .listMail {
+        width: 81.6rem;
+        margin: auto;
+        margin-bottom: 3.8rem;
+        .items {
+            background: $color-a;
+            float: left;
+            width: 48%;
+            border-radius: 3px;
+            box-shadow: 4px 4px 10px #bbb;
+            padding: 3.2rem 3.4rem 1rem 3.4rem;
+            text-align: justify;
+            &:nth-child(even) {
+                margin-left: 3rem;
+            }
+            h3 {
+                margin-left: -3rem;
+            }
+        }
+    }
+}
+/*  local_06
+------------------------------------*/
+.local_06 {
+    .listGold {
+        display: flex;
+        justify-content: center;
+        li {
+            margin: 0 0.8rem;
+        }
+    }
+    .listFadeNews {
+        text-align: center;
+    }
+    .news_thumb {
+        width: 80rem;
+        margin: auto;
+        .avatar {
+            float: left;
+            padding-left: 3rem;
+            width: 30%;
+        }
+        .text {
+            width: 48rem;
+            float: right;
+        }
+    }
+}
+/*  local_07
+------------------------------------*/
+.local_07 {
+    width: 80rem;
+    margin: auto;
+    .title_h3 {
+        background: url('../images/icon_Q.png') no-repeat #9F272D;
+        color: $color-a;
+        padding-left: 9.4rem;
+        height: 9.3rem;
+        display: flex;
+        align-items: center;
+    }
+    .title_h4 {
+        background: url('../images/icon_A.png') no-repeat;
+        height: 61px;
+        padding-left: 6.2rem;
+    }
+    .thumb_img {
+        float: left;
+    }
+    .row_clear {
+        li {
+            float: left;
+        }
+    }
+    .row-items {
+        .content {
+            padding: 2.2rem 3.7rem;
+            border: 2px solid #9F272D;
+        }
+    }
+}
