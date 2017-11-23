@@ -22,10 +22,21 @@ $(window).scroll(function() {
     }
 });
 
+try {
+    $('.fadeFocus1').crossfade({
+        threshold: 0.6,
+        backgroundPosition: 'center center'
+    });
+    $('.fadeFocus2').crossfade({
+        threshold: 0.6,
+        backgroundPosition: 'center center'
+    });
+} catch(e) {}
+
 // Fade scroll
 window.onload = function() {
     $(window).scroll(function() {
-        $('.fadeDown, .fadeLeft').each(function() {
+        $('.fadeDown').each(function() {
             let elemPos = $(this).offset().top;
             let scroll = $(window).scrollTop();
             let windowHeight = $(window).height();

@@ -217,15 +217,18 @@
 /*  local_05
 ------------------------------------*/
 .local_05 {
+    position: relative;
     background: url('../images/background_01.png') no-repeat;
     .arrow {
         padding-top: 5.9rem;
         padding-bottom: 2.4rem;
     }
     .title_h2 {
-        padding-bottom: 4.6rem;
+        // padding-bottom: 4.6rem;
     }
     .wrapContent {
+        z-index: 9999;
+        position: relative;
         background: url("../images/background_02.png") no-repeat center 150px;
         background-size: 100% 100%;
         padding-bottom: 2rem;
@@ -286,6 +289,10 @@
         li {
             margin: 0 0.8rem;
         }
+    }
+    .title_h2 {
+        position: relative;
+        z-index: 9;
     }
     .listFadeNews {
         padding-top: 3rem;
@@ -360,4 +367,19 @@
     + .arrow {
         padding-bottom: 5rem;
     }
+}
+
+
+.fadeFocus1 {
+    z-index: 0;
+    position: relative;
+    width: 95.6rem;
+    height: 70.6rem;
+}
+.fadeFocus2 {
+    margin-top: -3rem;
+    z-index: 0;
+    position: relative;
+    width: 96rem;
+    height: 28.6rem;
 }
