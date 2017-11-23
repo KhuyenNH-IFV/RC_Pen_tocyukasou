@@ -175,7 +175,7 @@ body {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(left), color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, white), to(rgba(255, 255, 255, 0)));
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(50%, white), to(rgba(255, 255, 255, 0)));
   background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 50%, rgba(255, 255, 255, 0) 100%);
   background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 50%, rgba(255, 255, 255, 0) 100%);
   background-image: linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 50%, rgba(255, 255, 255, 0) 100%);
@@ -233,41 +233,6 @@ body {
 }
 
 /*------------------- List -------------------*/
-.fadeLeft {
-  opacity: 0;
-  -webkit-transform: translate(-100px, 0px);
-  -ms-transform: translate(-100px, 0px);
-  transform: translate(-100px, 0px);
-  -webkit-transition: all 0.6s;
-  -o-transition: all 0.6s;
-  transition: all 0.6s;
-}
-
-.fadeLeft.ef-slide {
-  opacity: 1;
-  -webkit-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
-  transform: translate(0px, 0px);
-}
-
-.fadeLeft.ef-slide:nth-of-type(1) {
-  -webkit-transition-delay: 150ms;
-  -o-transition-delay: 150ms;
-  transition-delay: 150ms;
-}
-
-.fadeLeft.ef-slide:nth-of-type(2) {
-  -webkit-transition-delay: 300ms;
-  -o-transition-delay: 300ms;
-  transition-delay: 300ms;
-}
-
-.fadeLeft.ef-slide:nth-of-type(3) {
-  -webkit-transition-delay: 450ms;
-  -o-transition-delay: 450ms;
-  transition-delay: 450ms;
-}
-
 .fadeDown {
   opacity: 0;
   -webkit-transform: translate(0px, 100px);
@@ -816,6 +781,10 @@ body {
 
 .brd_none {
   border: 0 !important;
+}
+
+.font_M {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", serif !important;
 }
 
 .mT-90 {
