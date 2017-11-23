@@ -31,7 +31,7 @@ $font-awesome: "FontAwesome";
 // **********************************
 // Brand Color
 $color-primary: #006E6E;
-$color-1: #85294A;
+$color-1: #CF5A24;
 
 // Application Color
 $color-a: #ffffff;
@@ -54,6 +54,14 @@ $color-o: #000;
         height: 0;
         visibility: hidden;
     }
+}
+%font_20 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+}
+%font_24 {
+    font-size: 2.4rem;
+    line-height: 3.5rem;
 }
 %padding_title {
     padding-left: 3%;

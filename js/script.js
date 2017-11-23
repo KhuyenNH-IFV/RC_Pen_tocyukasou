@@ -9,32 +9,17 @@ function shinyGold() {
 }
 setTimeout('shinyGold()', 500);
 
-// Effect light button
-function shinyButton() {
-    $('.ctrbtn .shiny').animate({
-        left: '+=850px'
-    }, 3000).animate({
-        left: '20px'
-    }, 0);
-    setTimeout('shinyButton()', 1000);
-}
-setTimeout('shinyButton()', 500);
+setTimeout(function() {
+    $('.fixed1').css('right', "0");
+}, 800);
 
 // Scroll back to top
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 1000) {
-        $('#toTop').fadeIn(500);
+    if ($(this).scrollTop() > 700) {
+        $('.fixed2').fadeIn(500);
     } else {
-        $('#toTop').fadeOut(500);
+        $('.fixed2').fadeOut(500);
     }
-});
-
-$('#toTop').click(function(event) {
-    event.preventDefault();
-    $('html, body').animate({
-        scrollTop: 0
-    }, duration);
-    return false;
 });
 
 // Fade scroll

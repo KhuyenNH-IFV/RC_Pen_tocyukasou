@@ -39,12 +39,12 @@ body {
     // font-weight: bold;
 }
 .text {
-    font-size: 2.2rem;
-    line-height: 3.5rem;
+    font-size: 2.4rem;
+    line-height: 4.4rem;
 }
 
 .noteAds, .note {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 .main_img {
@@ -60,7 +60,7 @@ body {
     .imgThumb2 {
         position: absolute;
         right: 2.3rem;
-        bottom: 0;
+        bottom: 9.5rem;
     }
     .listIconGold {
         z-index: 9;
@@ -121,24 +121,9 @@ body {
     text-align: center;
 }
 .ctrbtn {
-    width: 80.9rem;
-    margin: auto;
     position: relative;
+    padding-bottom: 1rem;
     text-align: center;
-    overflow: hidden;
-    .shiny {
-        position: absolute;
-        left: 1rem;
-        top: -8rem;
-        z-index: 10;
-        display: block;
-        width: 8rem;
-        height: 40rem;
-        margin-top: .7rem;
-        transform: rotate(45deg);
-        background-image: linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
-        background-image: gradient(linear, left bottom, right bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 0)));
-    }
 }
 .ctrbtn2 {
     position: absolute;
@@ -148,6 +133,24 @@ body {
 .arrow {
     text-align: center;
 }
+
+.fixed1 {
+    position: absolute;
+    position: fixed;
+    top: 20%;
+    right: -20%;
+    transition: all 0.6s;
+    z-index: 9999;
+}
+.fixed2 {
+    display: none;
+    position: absolute;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+}
+
 
 /*------------------- List -------------------*/
 .listItems {
