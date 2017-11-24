@@ -102,7 +102,7 @@ body {
 }
 
 .noteAds, .note {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 .main_img {
@@ -215,12 +215,13 @@ body {
 .fixed1 {
   position: absolute;
   position: fixed;
-  top: 20%;
-  right: -20%;
+  top: 20px;
   -webkit-transition: all 0.6s;
   -o-transition: all 0.6s;
   transition: all 0.6s;
   z-index: 9999;
+  right: 50%;
+  margin-right: -665px;
 }
 
 .fixed2 {
@@ -233,6 +234,53 @@ body {
 }
 
 /*------------------- List -------------------*/
+.fadeDown-time {
+  opacity: 0;
+  -webkit-transform: translate(0px, 100px);
+  -ms-transform: translate(0px, 100px);
+  transform: translate(0px, 100px);
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.fadeDown-time.ef-slide {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+
+.fadeDown-time.ef-slide:nth-of-type(1) {
+  -webkit-transition-delay: 150ms;
+  -o-transition-delay: 150ms;
+  transition-delay: 150ms;
+}
+
+.fadeDown-time.ef-slide:nth-of-type(2) {
+  -webkit-transition-delay: 300ms;
+  -o-transition-delay: 300ms;
+  transition-delay: 300ms;
+}
+
+.fadeDown-time.ef-slide:nth-of-type(3) {
+  -webkit-transition-delay: 450ms;
+  -o-transition-delay: 450ms;
+  transition-delay: 450ms;
+}
+
+.fadeDown-time.ef-slide:nth-of-type(4) {
+  -webkit-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+.fadeDown-time.ef-slide:nth-of-type(5) {
+  -webkit-transition-delay: 750ms;
+  -o-transition-delay: 750ms;
+  transition-delay: 750ms;
+}
+
 .fadeDown {
   opacity: 0;
   -webkit-transform: translate(0px, 100px);
@@ -248,36 +296,6 @@ body {
   -webkit-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
   transform: translate(0px, 0px);
-}
-
-.fadeDown.ef-slide:nth-of-type(1) {
-  -webkit-transition-delay: 150ms;
-  -o-transition-delay: 150ms;
-  transition-delay: 150ms;
-}
-
-.fadeDown.ef-slide:nth-of-type(2) {
-  -webkit-transition-delay: 300ms;
-  -o-transition-delay: 300ms;
-  transition-delay: 300ms;
-}
-
-.fadeDown.ef-slide:nth-of-type(3) {
-  -webkit-transition-delay: 450ms;
-  -o-transition-delay: 450ms;
-  transition-delay: 450ms;
-}
-
-.fadeDown.ef-slide:nth-of-type(4) {
-  -webkit-transition-delay: 600ms;
-  -o-transition-delay: 600ms;
-  transition-delay: 600ms;
-}
-
-.fadeDown.ef-slide:nth-of-type(5) {
-  -webkit-transition-delay: 750ms;
-  -o-transition-delay: 750ms;
-  transition-delay: 750ms;
 }
 
 /*------------------------------------
@@ -500,6 +518,10 @@ body {
   float: left;
 }
 
+.local_03 .thumb_news .text span {
+  font-size: 1.8rem;
+}
+
 /*  local_04 / info_mail
 ------------------------------------*/
 .info_mail .img_content {
@@ -536,7 +558,7 @@ body {
 
 .local_05 .img_content {
   position: relative;
-  margin-top: -18rem;
+  margin-top: -8rem;
 }
 
 .local_05 .listMail {
@@ -586,11 +608,14 @@ body {
 /*  local_06
 ------------------------------------*/
 .local_06 {
-  background: url("../images/background_03.png");
+  position: relative;
   padding: 3.2rem 0 2rem;
 }
 
 .local_06 .listGold {
+  position: relative;
+  z-index: 99;
+  margin-top: 24rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -605,21 +630,27 @@ body {
   margin: 0 0.8rem;
 }
 
-.local_06 .title_h2 {
+.local_06 .title_h2, .local_06 .note {
   position: relative;
   z-index: 9;
 }
 
 .local_06 .listFadeNews {
+  position: relative;
+  z-index: 9;
   padding-top: 3rem;
   text-align: center;
 }
 
 .local_06 .title_h3 {
+  position: relative;
+  z-index: 9;
   padding: 5rem 0 2.8rem;
 }
 
 .local_06 .news_thumb {
+  position: relative;
+  z-index: 9;
   width: 80rem;
   margin: auto;
 }
@@ -633,6 +664,16 @@ body {
 .local_06 .news_thumb .text {
   width: 48rem;
   float: right;
+}
+
+.local_06 .news_thumb .text p {
+  margin-top: 12px;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.local_06 .news_thumb .title_h4 {
+  font-size: 2.8rem;
 }
 
 /*  local_07
@@ -707,11 +748,27 @@ body {
 }
 
 .fadeFocus2 {
+  background: url("../images/fading_focus_02.png");
+  margin: auto;
   margin-top: -3rem;
-  z-index: 0;
+  z-index: 9;
   position: relative;
-  width: 96rem;
+  width: 62.8rem;
   height: 28.6rem;
+}
+
+.background_local_06 .leaf {
+  z-index: 99;
+  position: absolute;
+  top: 12.5%;
+}
+
+.background_local_06 .leaf.left {
+  left: 0;
+}
+
+.background_local_06 .leaf.right {
+  right: 0;
 }
 
 /*======================================
@@ -726,8 +783,8 @@ body {
 
 .footer ul {
   display: table;
-  margin: auto;
-  font-size: 25px;
+  margin-left: 6rem;
+  font-size: 1.8rem;
 }
 
 .footer ul li {
@@ -790,6 +847,10 @@ body {
 .pTB10 {
   padding-top: 1.5rem !important;
   padding-bottom: 0.8rem;
+}
+
+.mT-70 {
+  margin-top: -7rem !important;
 }
 
 .mT-90 {

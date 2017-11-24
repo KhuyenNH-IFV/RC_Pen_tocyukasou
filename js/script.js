@@ -9,13 +9,9 @@ function shinyGold() {
 }
 setTimeout('shinyGold()', 500);
 
-setTimeout(function() {
-    $('.fixed1').css('right', "0");
-}, 800);
-
 // Scroll back to top
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 700) {
+    if ($(this).scrollTop() > 1400) {
         $('.fixed2').fadeIn(500);
     } else {
         $('.fixed2').fadeOut(500);
@@ -24,10 +20,10 @@ $(window).scroll(function() {
 
 try {
     $('.fadeFocus1').crossfade({
-        threshold: 0.6,
+        threshold: 5,
         backgroundPosition: 'center center'
     });
-    $('.fadeFocus2').crossfade({
+    $('.local_06').crossfade({
         threshold: 0.6,
         backgroundPosition: 'center center'
     });
@@ -36,7 +32,7 @@ try {
 // Fade scroll
 window.onload = function() {
     $(window).scroll(function() {
-        $('.fadeDown').each(function() {
+        $('.fadeDown, .fadeDown-time').each(function() {
             let elemPos = $(this).offset().top;
             let scroll = $(window).scrollTop();
             let windowHeight = $(window).height();
