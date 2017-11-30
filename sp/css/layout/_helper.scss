@@ -1,0 +1,62 @@
+/*======================================
+        Helper
+======================================*/
+.is_pc {
+    display: inherit;
+}
+.is_sp {
+    display: none;
+}
+.is_hidden {
+    display: none;
+}
+.bold {
+    font-weight: bold;
+}
+.tar {
+    text-align: right;
+    display: block;
+}
+.tal {
+    text-align: left;
+}
+.tac {
+    text-align: center;
+}
+.float_left {
+    float: left;
+}
+.float_right {
+    float: right!important;
+}
+.brd_none {
+    border: 0!important;
+}
+.font_M {
+    font-family: $font-micho!important;
+}
+.pTB10 {
+    padding-top: 1.5rem!important;
+    padding-bottom: 0.8rem;
+}
+.mT-20 {
+    margin-top: -20%!important;
+}
+.yellow {
+    color: yellow;
+}
+.red {
+    color: #6B0000;
+}
+.red2 {
+    color: #CB1C24;
+}
+.red3 {
+    color: #9F272D;
+}
+.white {
+    color: #fff;
+}
+.bg-white {
+    background: #fff;
+}

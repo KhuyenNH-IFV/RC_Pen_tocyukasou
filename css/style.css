@@ -609,13 +609,11 @@ body {
 ------------------------------------*/
 .local_06 {
   position: relative;
+  background: url("../images/background_03.jpg");
   padding: 3.2rem 0 2rem;
 }
 
 .local_06 .listGold {
-  position: relative;
-  z-index: 99;
-  margin-top: 24rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -630,27 +628,16 @@ body {
   margin: 0 0.8rem;
 }
 
-.local_06 .title_h2, .local_06 .note {
-  position: relative;
-  z-index: 9;
-}
-
 .local_06 .listFadeNews {
-  position: relative;
-  z-index: 9;
   padding-top: 3rem;
   text-align: center;
 }
 
 .local_06 .title_h3 {
-  position: relative;
-  z-index: 9;
   padding: 5rem 0 2.8rem;
 }
 
 .local_06 .news_thumb {
-  position: relative;
-  z-index: 9;
   width: 80rem;
   margin: auto;
 }
@@ -748,26 +735,28 @@ body {
 }
 
 .fadeFocus2 {
-  background: url("../images/fading_focus_02.png");
-  margin: auto;
-  margin-top: -3rem;
-  z-index: 9;
+  text-align: center;
   position: relative;
-  width: 62.8rem;
-  height: 28.6rem;
+  z-index: 9;
+  margin-top: -3rem;
 }
 
 .background_local_06 .leaf {
-  z-index: 99;
   position: absolute;
-  top: 12.5%;
+  top: 11.7%;
 }
 
 .background_local_06 .leaf.left {
   left: 0;
+  background: url("../images/leaf_left.png");
+  width: 192px;
+  height: 192px;
 }
 
 .background_local_06 .leaf.right {
+  background: url("../images/leaf_right.png");
+  width: 197px;
+  height: 192px;
   right: 0;
 }
 

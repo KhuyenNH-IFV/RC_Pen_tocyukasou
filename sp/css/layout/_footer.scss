@@ -1,0 +1,57 @@
+/*======================================
+        Footer
+======================================*/
+.footer {
+    @extend %clearfix;
+    text-align: center;
+    background: $color-o;
+    ul {
+        display: table;
+        margin: auto;
+        font-size: 1.8rem;
+        padding-top: 2%;
+        text-align: center;
+            @extend %clearfix;
+        &:first-child {
+            padding-top: 6%;
+            padding-bottom: 3%;
+        }
+            
+        li {
+            font-size: 3.2rem;
+            float: left;
+            color: $color-a;
+        }
+        a {
+            color: $color-a;
+            text-align: center;
+            
+        }
+    }
+}
+.btnFollowing {
+    padding-top: 5%;
+    display: flex;
+    align-items: flex-end;
+}
+// .fixed1 {
+//     width: 40%;
+//     float: left;
+//     // position: absolute;
+//     // position: fixed;
+//     // top: 20px;
+//     // transition: all 0.6s;
+//     // z-index: 9999;
+//     // right: 50%;
+//     // margin-right: -665px;
+// }
+// .fixed2 {
+//     float: left;
+//     width: 50%;
+//     // display: none;
+//     // position: absolute;
+//     // position: fixed;
+//     // bottom: 0;
+//     // right: 0;
+//     // z-index: 9999;
+// }

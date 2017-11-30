@@ -1,0 +1,16 @@
+/*-----------------------
+        Responsive for device < 680px
+-----------------------------------------*/
+@media screen and (max-width: 680px) {
+    html {
+        font-size: 7px;
+    }
+}
+/*-----------------------
+        Responsive for device < 590px
+-----------------------------------------*/
+@media screen and (max-width: 590px) {
+    html {
+        font-size: 5px;
+    }
+}
