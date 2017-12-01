@@ -346,14 +346,25 @@
 	// --------------------------------------------------------------------------
 	// Define default plugin options.
 	// --------------------------------------------------------------------------
-
+	var wBrowser = $(window).width();
+	if (wBrowser > 600 && wBrowser < 700) {
+		offsetNumber = 820;
+	} else if (wBrowser > 700 && wBrowser < 800) {
+		offsetNumber = 920;
+	} else if (wBrowser > 800 && wBrowser < 950) {
+		offsetNumber = 1200;
+	} else if (wBrowser > 950) {
+		offsetNumber = 1300;
+	} else {
+		var offsetNumber = 580;
+	}
 	$.fn.crossfade.defaults = {
 		backgroundPosition: 'center center',
 		// threshold: 0.5,
 		// offset: 0
 
 		// Custom option
-		offset: 550
+		offset: offsetNumber
 	};
 
 	// --------------------------------------------------------------------------

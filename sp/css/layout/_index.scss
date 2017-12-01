@@ -41,8 +41,10 @@
         .items_news {
             position: relative;
             background: url('../images/background_news.png') no-repeat;
-            background-size: cover;
-            padding: 11% 3% 5%;
+            // background-size: cover;
+            background-size: 100% 100%;
+            padding: 12% 3% 5%;
+            text-align: justify;
             &:not(:last-child) {
                 margin-bottom: 10rem;
             }
@@ -86,19 +88,6 @@
                     padding-top: 2rem;
                     line-height: 1;
                 }
-                .imgThumb {
-                    float: right;
-                    position: relative;
-                    top: -5.5rem;
-                }
-                .thumb_news_sub {
-                    // padding: 1.6rem 3.5rem 1.6rem 27.7rem;
-                    padding: 2% 2% 1% 25%;
-                }
-                .imgThumb_sub {
-                    top: -2rem;
-                    right: 0.5rem;
-                }
                 .imgFade {
                     width: 44%;
                 }
@@ -136,23 +125,24 @@
         position: relative;
     }
     .imgThumb_left {
-        margin-left: -7.4rem;
+        margin-left: -3.4%;
     }
     .thumb_news_sub {
         background: $color-a;
         margin-top: 4.5rem;
         position: relative;
-        padding: 2% 2% 1% 25%;
+        padding: 4% 2%;
         border: 1px solid $color-o;
         .imgThumb_sub {
-            position: absolute;
-            top: -5%;
-            left: -1.5%;
-            width: 29%;
+            position: relative;
+            margin-top: -6%;
+            left: -4%;
+            width: 35%;
+            float: left;
         }
         .text_sub {
             @extend %font_24;
-            width: 90%;
+            width: 65%;
             float: right;
             .title_h4 {
                 letter-spacing: 0;
@@ -251,6 +241,7 @@
 .local_05 {
     position: relative;
     background: url('../images/background_01.png') no-repeat;
+    background-size: 100%;
     .arrow {
         padding-top: 5.9rem;
         padding-bottom: 2.4rem;
@@ -319,6 +310,7 @@
     background: url('../images/background_03.jpg');
     padding: 3.2rem 0 2rem;
     .listGold {
+        padding: 0 8%;
         display: flex;
         justify-content: center;
         li {
@@ -367,13 +359,16 @@
         top: 15%;
         &.left {
             left: 0;
-            background: url('../images/leaf_left.png');
-            width: 169px;
-            height: 163px;
+            background: url('../images/leaf_left.png') no-repeat;
+            background-size: 100%;
+            width: 22%;
+            height: 10%;
         }
-        &.right {background: url('../images/leaf_right.png');
-            width: 169px;
-            height: 163px;
+        &.right {
+            background: url('../images/leaf_right.png') no-repeat;
+            background-size: 100%;
+            width: 22%;
+            height: 10%;
             right: 0;
         }
     }

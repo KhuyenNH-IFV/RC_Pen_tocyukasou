@@ -17,10 +17,10 @@ setTimeout('shinyGold()', 500);
 //         $('.fixed2').fadeOut(500);
 //     }
 // });
-
+var thresholdNumber = 2;
 try {
     $('.fadeFocus1').crossfade({
-        threshold: 3,
+        threshold: thresholdNumber,
         backgroundPosition: 'center center'
     });
 } catch(e) {}
