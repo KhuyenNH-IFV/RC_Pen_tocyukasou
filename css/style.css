@@ -17,6 +17,30 @@
   line-height: 3.5rem;
 }
 
+/* CSS fade */
+body {
+  animation: fadeIn 2s ease 0s 1 normal;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 html {
   font-size: 10px;
 }
@@ -110,7 +134,11 @@ body {
 }
 
 .main_img .img_bg {
-  margin-left: -4.5rem;
+  margin-left: -6.4rem;
+}
+
+.main_img .img_bg2 {
+  margin-left: -4.6rem;
 }
 
 .main_img .imgThumb {
@@ -165,12 +193,12 @@ body {
 
 .main_img .listGold .shiny {
   position: absolute;
-  left: 1rem;
-  top: -4rem;
+  left: -4rem;
+  top: -6rem;
   z-index: 3;
   display: block;
   width: 4rem;
-  height: 25rem;
+  height: 28rem;
   margin-top: .7rem;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -179,7 +207,6 @@ body {
   background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 50%, rgba(255, 255, 255, 0) 100%);
   background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 50%, rgba(255, 255, 255, 0) 100%);
   background-image: linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 50%, rgba(255, 255, 255, 0) 100%);
-  background-image: gradient(linear, left bottom, right bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, white), color-stop(100%, rgba(255, 255, 255, 0)));
 }
 
 .content_img {
@@ -200,6 +227,37 @@ body {
   position: relative;
   padding-bottom: 1rem;
   text-align: center;
+  overflow: hidden;
+  width: 87.3rem;
+  height: 17.8rem;
+  margin: auto;
+  padding-top: 1rem;
+}
+
+.ctrbtn .btn_text {
+  position: absolute;
+  left: 0.7rem;
+  top: -0.3rem;
+  z-index: 99;
+}
+
+.ctrbtn .shiny {
+  position: absolute;
+  left: -5rem;
+  top: -9rem;
+  z-index: 3;
+  display: block;
+  width: 10rem;
+  height: 36rem;
+  margin-top: .7rem;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(50%, white), to(rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 50%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 50%, rgba(255, 255, 255, 0) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(left), color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, white), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 50%, rgba(255, 255, 255, 0) 100%);
 }
 
 .ctrbtn2 {
@@ -220,16 +278,15 @@ body {
   -o-transition: all 0.6s;
   transition: all 0.6s;
   z-index: 9999;
-  right: 50%;
-  margin-right: -665px;
+  right: -30px;
 }
 
 .fixed2 {
   display: none;
   position: absolute;
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: -25px;
+  right: -25px;
   z-index: 9999;
 }
 
@@ -286,9 +343,9 @@ body {
   -webkit-transform: translate(0px, 100px);
   -ms-transform: translate(0px, 100px);
   transform: translate(0px, 100px);
-  -webkit-transition: all 0.6s;
-  -o-transition: all 0.6s;
-  transition: all 0.6s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .fadeDown.ef-slide {
@@ -558,7 +615,7 @@ body {
 
 .local_05 .img_content {
   position: relative;
-  margin-top: -8rem;
+  margin-top: -30rem;
 }
 
 .local_05 .listMail {
@@ -720,7 +777,7 @@ body {
 }
 
 .info_mail .title_h2 {
-  padding: 6rem 0 4.2rem;
+  padding: 6rem 0 0;
 }
 
 .info_mail + .arrow {
@@ -730,8 +787,8 @@ body {
 .fadeFocus1 {
   z-index: 0;
   position: relative;
-  width: 95.6rem;
-  height: 70.6rem;
+  width: 96rem;
+  height: 91rem;
 }
 
 .fadeFocus2 {

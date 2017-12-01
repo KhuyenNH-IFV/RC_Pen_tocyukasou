@@ -7,20 +7,25 @@ function shinyGold() {
     }, 0);
     setTimeout('shinyGold()', 1000);
 }
-setTimeout('shinyGold()', 500);
 
-// Scroll back to top
-// $(window).scroll(function() {
-//     if ($(this).scrollTop() > 1400) {
-//         $('.fixed2').fadeIn(500);
-//     } else {
-//         $('.fixed2').fadeOut(500);
-//     }
-// });
-var thresholdNumber = 2;
+// Effect light ctrBtn
+function ctrBtn() {
+    $('.ctrbtn .shiny').animate({
+        left: '110%'
+    }, 3000).animate({
+        left: '2%'
+    }, 0);
+    setTimeout('ctrBtn()', 1000);
+}
+
+setTimeout(function() {
+    shinyGold();
+    ctrBtn();
+}, 500);
+
 try {
     $('.fadeFocus1').crossfade({
-        threshold: thresholdNumber,
+        threshold: 2,
         backgroundPosition: 'center center'
     });
 } catch(e) {}

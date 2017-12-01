@@ -3,11 +3,25 @@ function shinyGold() {
     $('.gold .shiny').animate({
         left: '+=400px'
     }, 3000).animate({
-        left: '20px'
+        left: '-6rem'
     }, 0);
     setTimeout('shinyGold()', 1000);
 }
-setTimeout('shinyGold()', 500);
+
+// Effect light ctrBtn
+function ctrBtn() {
+    $('.ctrbtn .shiny').animate({
+        left: '86rem'
+    }, 3000).animate({
+        left: '2rem'
+    }, 0);
+    setTimeout('ctrBtn()', 1000);
+}
+
+setTimeout(function() {
+    shinyGold();
+    ctrBtn();
+}, 500);
 
 // Scroll back to top
 $(window).scroll(function() {
@@ -20,7 +34,7 @@ $(window).scroll(function() {
 
 try {
     $('.fadeFocus1').crossfade({
-        threshold: 5,
+        threshold: 2,
         backgroundPosition: 'center center'
     });
 } catch(e) {}
